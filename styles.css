@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes invalid-input {
+    50% {
+        border-color: red;
+    }
+}
+
+@keyframes winning-animation {
+    0% {
+        color: green;
+    }
+
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: yellow;
+    }
+
+    75% {
+        color: red;
+    }
+
+    100% {
+        color: green;
+    }
+
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+    width: 100%;
+    margin: 0px;
+}
+
+
+
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.header-text {
+    font-size: 30px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+
+.header-text.winning {
+    animation-name: winning-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.input-container {
+    margin-top: 70px;
+}
+
+.input-subcontainer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.input-subcontainer {
+    width: 80px;
+    height: 80px;
+    border: solid rgba(178, 178, 178, 1) 3px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-subcontainer.wrong {
+    color: white;
+    background-color: rgb(156, 156, 156);
+}
+
+.input-subcontainer.correct {
+    color: white;
+    background-color: darkgreen;
+}
+
+.input-subcontainer.misplaced {
+    color: white;
+    background-color: darkgoldenrod;
+}
+
+.input-subcontainer.row-one {
+    animation-name: invalid-input;
+    animation-duration: 0.75s;
+}
+
+.input-subcontainer.row-two {
+    animation-name: invalid-input;
+    animation-duration: 0.75s;
+}
+
+.input-subcontainer.row-three {
+    animation-name: invalid-input;
+    animation-duration: 0.75s;
+}
+
+.input-subcontainer.row-four {
+    animation-name: invalid-input;
+    animation-duration: 0.75s;
+}
+
+.input-subcontainer.row-five {
+    animation-name: invalid-input;
+    animation-duration: 0.75s;
+}
+
+.input-subcontainer.row-six {
+    animation-name: invalid-input;
+    animation-duration: 0.75s;
+}
+
